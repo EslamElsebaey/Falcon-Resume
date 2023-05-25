@@ -43,10 +43,14 @@
             color: #0da1ec;
           }
     }
-    .general-related-story .start-btn:hover , .packages-ques-btns .contact-us-btn:hover , .packages-ques-btns .common-ques-btn:hover{
+    .general-related-story .start-btn:hover {
         background-color: #fff;
-        color: #324b9f;
+        color:  #0da1ec;
     }
+     .packages-ques-btns .contact-us-btn:hover , .packages-ques-btns .common-ques-btn:hover{
+        background-color: #fff;
+        color:  #324b9f;
+     }
     .package-item .price-buy-sec .package-buy-btn:hover{
         background-color: #324b9f;
     }

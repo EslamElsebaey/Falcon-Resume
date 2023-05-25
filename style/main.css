@@ -1383,7 +1383,11 @@ html[dir=ltr] .package-item ul li span {
     background-color: #ffffff;
     color: #0da1ec;
   }
-  .general-related-story .start-btn:hover, .packages-ques-btns .contact-us-btn:hover, .packages-ques-btns .common-ques-btn:hover {
+  .general-related-story .start-btn:hover {
+    background-color: #fff;
+    color: #0da1ec;
+  }
+  .packages-ques-btns .contact-us-btn:hover, .packages-ques-btns .common-ques-btn:hover {
     background-color: #fff;
     color: #324b9f;
   }
