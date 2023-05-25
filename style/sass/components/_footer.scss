@@ -1,0 +1,32 @@
+
+footer{
+    padding: 20px;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.102);
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        margin: 0;
+        font-size: 13px;
+        color: #666666;
+    }
+}
+
+
+@include max-768 {
+    .footer-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        img{
+            width: 110px;
+        }
+    }
+    .footer-content p{
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,141 @@
+//  common questiona section 
+.common-questions{
+    padding: 100px 0;
+    .title-text{
+        color: #324b9f;
+    }
+}
+.main-question{
+    position: relative;
+    margin-bottom: 2px;
+    padding-inline-start: 110px;
+    padding-inline-end: 30px;
+    background-color: #f7f7f7;
+    padding-top: 27px ;
+    padding-bottom: 27px ;
+    cursor: pointer;
+    
+}
+.main-question.active {
+    .ques-text , .ques-text-sec i , .ques-num{
+        color: #0da1ec;
+    }
+    .la-plus:before{
+        content: "\f068";
+    }
+    
+}
+
+.ques-num{
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    width: 80px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    color: #000;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    &::after{
+        content: "";
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        background-color: #e8e8e8;
+        top: 0;
+        inset-inline-end: 0;
+    }
+}
+
+.ques-text{
+  
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
+    max-width: 85%;
+}
+
+.ques-text-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i{
+        font-size: 24px;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        color: #000;
+        transition: all linear .2s;
+    }
+}
+.ques-answer{
+    font-size: 14px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 20px;
+    display: none;
+    font-weight: 400;
+    text-align: start;
+    max-width: 95%;
+}
+
+.active-color-blue {
+    color: #18778d !important;
+}
+
+
+.questions-parent{
+    max-width: 750px;
+    margin: auto;
+}
+
+html[dir="ltr"]{
+    .ques-answer{
+        line-height: 1.6;
+    }
+}
+
+
+@include max-768 {
+    .ques-text-sec{
+        align-items: flex-start;
+    }
+    .common-questions{
+        padding: 60px 0;
+    }
+    .ques-text{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .main-question{
+        padding-inline-end: 15px;
+        padding-inline-start: 55px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .ques-num {
+        padding-top: 15px;
+        width: 40px;
+    }
+    .ques-text-sec i{
+        font-size: 20px;
+    }
+    .ques-answer{
+        max-width: 100%;
+        line-height: 1.7;
+        margin-top: 10px;
+    }
+    html[dir="ltr"]{
+        .ques-text{
+            line-height: 1.4;
+        }
+       .ques-answer{
+            line-height: 1.45;
+        }
+    }
+}

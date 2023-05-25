@@ -1,0 +1,276 @@
+
+.success-story{
+    padding: 115px 0  125px 0;
+    .succes-item{
+        position: relative;
+    }
+    .swiper-pagination-bullet{
+        background-color: #000000;
+        opacity: 0.302;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #0da1ec;
+        opacity: 1;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: -45px;
+    }
+    .title-text{
+        color: #324b9f;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left: -60px;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        right: -60px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        position: absolute;
+        transition: all linear .2s;
+        i{
+        font-size: 30px;
+        color: rgba($color: #000000, $alpha: 0.302);
+        transition: color linear .2s;
+        }
+      }
+      
+}
+.person{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    span{
+        font-size: 16px;
+        color: #324b9f;
+        font-weight: 700;
+        margin-inline-start: 10px;
+        display: inline-block;
+    }
+}
+.succes-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        font-size: 16px;
+        max-width: 555px;
+        line-height: 30px;
+        color: #666666;
+        margin-bottom: 25px;
+    }
+    h4{
+        font-size: 16px;
+        color: #0da1ec;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .review-box{
+        padding: 34px 38px 34px 30px;
+        max-width: 555px;
+        position: relative;
+        background-color: #f5f6fa;
+        border-radius: 20px;
+        border-top-right-radius: 0;
+        i{
+            position: absolute;
+            font-size: 40px;
+            color: #cccccc;
+            top:4px;
+            inset-inline-start: 10px;
+        }
+    }
+    .review-text{
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+}
+
+html[dir="ltr"]{
+    .succes-item .review-box{
+        border-radius: 20px;
+        border-top-left-radius: 0;
+        padding: 34px 30px 34px  40px ;
+    }
+    .succes-item .review-box i{
+        transform: scaleX(-1);
+    }
+}
+.story-img-holder{
+    img{
+        max-width: 100%;
+    }
+}
+
+
+// *********************************************************************************
+
+
+
+.general-related-story{
+    padding: 115px 0;
+    min-height: 370px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+   
+    h2{
+        font-size: 36px;
+        line-height: 50px;
+        color: #ffffff;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .start-btn{
+       text-align: center;
+        width: 190px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: rgba(50,75,159,0);
+        border: 2px solid #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 800;
+        margin: auto;
+        transition: background-color linear .2s;
+    }
+    .content{
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.make-your-story{
+    background-color: #0da1ec;
+    background-image: url(../images/shape\ 1.png);
+}
+.packages-questionaire{
+    background-color: #324b9f;
+    background-image: url(../images/shape\ 2.png);
+}
+.packages-ques-btns{
+display: flex;
+align-items: center;
+justify-content: center;
+  a {
+    width: 190px;
+    height: 50px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .2s;
+}
+.common-ques-btn{
+    background-color: rgba(13,161,236,0);
+    border: 2px solid #ffffff;
+}
+.contact-us-btn{
+    background-color: #0da1ec;
+    margin-inline-start: 10px;
+}
+}
+
+
+@include max-1200{
+    .succes-item{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        column-gap: 30px;
+    }
+    .story-img-holder img{
+        width: 100%;
+    }
+}
+
+@include max-992 {
+    .succes-item p , .succes-item .review-text{
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .person span , .succes-item h4{
+        font-size: 15px;
+    }
+    .person{
+        margin-bottom: 7px;
+    }
+    .succes-item .review-box i{
+        top: 2px;
+    }
+    .succes-item .review-box{
+        padding: 30px 20px 20px 20px;
+    }
+    .succes-item .review-box i{
+        font-size: 35px;
+    }
+}
+
+@include max-768 {
+     .packages-ques-btns a{
+        font-size: 15px;
+         height: 41px; 
+    }
+    .succes-item .review-box i{
+        top: 0;
+    }
+    .general-related-story .content{
+        padding: 0 20px;
+    }
+    .succes-item .review-box   , html[dir=ltr] .succes-item .review-box{
+        padding: 30px 20px 20px 20px;
+    }
+    .success-story .swiper-button-next, .success-story .swiper-button-prev{
+        display: none;
+    }
+    .success-story{
+        padding:60px 0 90px 0;
+    }
+    .succes-item{
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    .story-img-holder{
+       display: none;
+    }
+    .succes-item p{
+        margin-bottom: 18px;
+    }
+    .story-img-holder img{
+        width: 250px;
+    }
+    .make-your-story , .packages-questionaire{
+        background-image: none;
+    }
+    .general-related-story h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    .general-related-story .start-btn{
+        width: 180px;
+        height: 48px;
+        font-size: 17px;
+    }
+    .general-related-story{
+        padding: 75px 0;
+        min-height: auto;
+    }
+    html[dir="ltr"]{
+        .succes-item p{
+            line-height : 1.5; 
+        }
+        .general-related-story h2{
+            line-height: 1.35;
+        }
+    }
+}

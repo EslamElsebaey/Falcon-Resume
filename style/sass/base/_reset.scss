@@ -1,0 +1,66 @@
+.showToTop{
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo{
+    .scroll-img{
+        width: 120px;
+    }
+}
+
+
+.fixed{
+    position: fixed ;
+    width: 100%;
+    left: 0;
+    padding: 13px 0;
+    z-index: 100;
+    background-color: #324b9f ;
+    transition: all linear .5s;
+
+  }
+
+  .fixsedt {
+    top: -130px;
+    transition: all linear .5s;
+  }
+  
+  
+
+
+@media (hover : hover) {
+    .nav-ul > li a {
+        &:hover{
+            color: #0da1ec;
+        }
+    }
+    .general-related-story .start-btn:hover , .packages-ques-btns .contact-us-btn:hover , .packages-ques-btns .common-ques-btn:hover{
+        background-color: #fff;
+        color: #324b9f;
+    }
+    .package-item .price-buy-sec .package-buy-btn:hover{
+        background-color: #324b9f;
+    }
+    .success-story .swiper-button-next:hover i, .success-story .swiper-button-prev:hover i{
+        color: #0da1ec;
+    }
+    .ancor-btn:hover{
+        color: #000;
+        text-decoration: none;
+    }
+    @include min-768 {
+        .toTop{
+          &:hover{
+            background-color: #324b9f;
+            i{
+              color: #fff;
+            }
+        }
+        }
+      }
+      
+      .callUs-btn:hover{
+        color: #fff;
+    }
+}

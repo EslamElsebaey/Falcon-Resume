@@ -1,0 +1,232 @@
+//  header
+
+
+.logo  , .call-opennav-div{
+    width: 14.7%;
+}
+.call-sec{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.callUs-btn {
+    width: 123px;
+height: 41px;
+border-radius: 20px;
+background-color: #0da1ec;
+font-size: 14px;
+color: #ffffff;
+font-weight: 700;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all linear .2s;
+animation: contact-pulse 1.5s ease-out infinite;
+}
+
+@keyframes contact-pulse {
+	0% {
+		box-shadow: 0 0 0 0 #0da1ec;
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(148, 95, 5,  0);
+	}
+}
+
+header{
+    padding: 17px 0;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 0;
+   width: 100%;
+   border-bottom: 1px solid rgba($color: #fff, $alpha: 0.102);
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    a{
+        display: block;
+        width: 100%;
+    }
+    img{
+       width: 168px;
+       transition: all linear .3s;
+    }
+}
+
+
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li:last-child{
+        margin-inline-end: 0;
+    }
+   > li{
+        margin-inline-end: 20px;
+        a{
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 700;
+            text-transform: capitalize;
+            transition: all linear .2s;
+        }
+    }
+}
+
+
+
+.openNav-btn{
+    display: none ;
+    i {
+        font-size: 24px;
+        display: block;
+        color: #fff;
+       
+    }
+}
+
+
+.closeNav-btn{
+    display: none;
+}
+
+.open-nav{
+    inset-inline-start: -100% ;
+}
+
+
+@include max-1200{
+    .logo, .call-opennav-div{
+        width: 18.06%;
+    }
+}
+
+@include max-992 {
+    .logo, .call-opennav-div{
+        width: 17.82%;
+    }
+    .header-content{
+        flex-wrap: wrap;
+    }
+    .logo {
+        img {
+            width:  120px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width : 992px) and (max-width:1200px) {
+    .nav-ul > li{
+        margin-inline-end: 12px;
+    }
+
+} 
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .nav-ul > li a{
+        font-size: 14px;
+    }
+}
+
+
+@include max-768 {
+    .close-btn-holder{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo img{
+        width: 105px;
+        max-width: none;
+    }
+    .logo, .call-opennav-div{
+        width: auto;
+    }
+    .call-opennav-div{
+        display: flex;
+    }
+    .call-sec{
+        display: block;
+        margin-inline-end: 20px;
+    }
+    .logo, .call-sec{
+        width: auto;
+    }
+    
+    header{
+        padding: 15px 0;
+    }
+ 
+    .header-content{
+        position: relative;
+        width: 100%;
+    }
+    .openNav-btn{
+        display: block;
+    }
+    .nav-ul li:last-child{
+        margin-bottom: 0;
+    }
+    nav{
+        position: fixed ;
+        overflow: auto;
+        top: 0 ;
+        inset-inline-start: 0%;
+        width: 100%;
+        z-index: 99;
+        height: 100%;
+        padding: 23px 20px 0 20px;
+        background-color: #fff;
+        transition:  inset-inline-start linear .3s;
+    }
+    .nav-ul{
+        flex-direction: column;
+        margin: 50px 0 0 0 ;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-ul > li{
+        margin-bottom: 20px;
+        margin-inline-end: 0;
+        width: 100%;
+        text-align: center;
+        a{
+            color: #324b9f;
+            font-size: 16px;
+        }
+    }
+    .closeNav-btn{
+      display: block;
+        i{
+            font-size: 24px;
+            color: #324b9f ;
+        }
+    }
+
+
+   
+  
+   
+   
+}
