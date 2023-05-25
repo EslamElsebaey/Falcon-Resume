@@ -11,24 +11,6 @@ $(document).ready(function(){
 
 
 
-// let scrollBtn = document.querySelector('.scroll-btn');
-// let aboutSec = document.querySelector('#about');
-// scrollBtn.addEventListener('click', () => {
-//   aboutSec.scrollIntoView({behavior: 'smooth'});
-// });
-
-
-// let buyBtn = document.querySelector('.buy-btn');
-// let packages = document.querySelector('#packages');
-// buyBtn.addEventListener('click', () => {
-//   packages.scrollIntoView({behavior: 'smooth'});
-// });
-
-// let commonQuesBtn = document.querySelector('.common-ques-btn');
-// let commonQuestions = document.querySelector('#commonQuestions');
-// commonQuesBtn.addEventListener('click', () => {
-//   commonQuestions.scrollIntoView({behavior: 'smooth'});
-// });
 
 
 
@@ -73,7 +55,7 @@ $(".main-question").click(function(){
 // Succes Story Swiper
 const successStory = new Swiper('.success-story .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   navigation: {
     nextEl: ' .success-story .swiper-button-next',
