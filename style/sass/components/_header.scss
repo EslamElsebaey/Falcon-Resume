@@ -69,6 +69,7 @@
     clip-path: circle(122% at 9% 15%);
     visibility: visible;
     opacity: 1;
+    z-index: 100;
     .hamburger-lines .line{
         background-color: #000;
     }
@@ -255,6 +256,10 @@ header{
     
     header{
         padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
  
     .header-content{

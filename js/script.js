@@ -125,14 +125,19 @@ $(".toTop").click(function(){
 
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 150) {
-        $("header").addClass("fixed");
         if($(window).width() > 768){
          $(".logo img").addClass("scroll-img")
+         $("header").addClass("fixed");
+        }else{
+          $("header").addClass("bg-blue")
         }
       } else {
-        $("header").removeClass("fixed");
+       
         if($(window).width() > 768){
+          $("header").removeClass("fixed");
           $(".logo img").removeClass("scroll-img")
+        }else{
+          $("header").removeClass("bg-blue")
         }
       }
     });
