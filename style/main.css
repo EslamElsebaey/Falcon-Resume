@@ -872,6 +872,9 @@ html[dir=ltr] .services-parent-items p {
 .success-story {
   padding: 115px 0 125px 0;
 }
+.success-story .swiper-pagination {
+  z-index: 2;
+}
 .success-story .succes-item {
   position: relative;
 }
@@ -1090,6 +1093,8 @@ html[dir=ltr] .succes-item .review-box i {
   }
   .general-related-story .content {
     padding: 0 20px;
+    position: static;
+    z-index: unset;
   }
   .succes-item .review-box, html[dir=ltr] .succes-item .review-box {
     padding: 30px 20px 20px 20px;
