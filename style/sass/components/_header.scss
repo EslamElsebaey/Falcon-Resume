@@ -1,6 +1,82 @@
 //  header
 
 
+//  humburger icon
+ 
+.menu-bars {
+    position: relative;
+    z-index: 300;
+    width: 19px;
+    display: flex;
+    align-items: center;
+    margin-inline-start: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.overflowHidden{
+    overflow: hidden !important;
+}
+
+.show-icons .menu-bars {
+    display: none;
+    background: transparent;
+    outline: none !important;
+}
+
+.fixall {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+.hamburger-lines {
+    height: 15px;
+    width: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger-lines .line {
+    display: block;
+    height: 2px;
+    width: 100%;
+   background-color: #fff;
+   transition: all 0.4s ease-in-out;
+}
+.open-bars .hamburger-lines .line1 {
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+  }
+  .open-bars .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .open-bars .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+    transform-origin: 0% 100%;
+  }
+
+  .barSearchHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .reset-left {
+    left: 0;
+    top: 0;
+    clip-path: circle(122% at 9% 15%);
+    visibility: visible;
+    opacity: 1;
+    .hamburger-lines .line{
+        background-color: #000;
+    }
+
+}
+
+
+
 .logo  , .call-opennav-div{
     width: 14.7%;
 }
@@ -41,6 +117,7 @@ header{
     top: 0px;
     left: 0;
    width: 100%;
+   
    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.102);
 }
 
@@ -70,7 +147,7 @@ header{
         margin-inline-end: 0;
     }
    > li{
-        margin-inline-end: 20px;
+        margin-inline-end: 30px;
         a{
             font-size: 14px;
             color: #ffffff;
@@ -94,14 +171,17 @@ header{
 }
 
 
-.closeNav-btn{
-    display: none;
-}
 
 .open-nav{
     inset-inline-start: -100% ;
 }
 
+
+@include min-768 {
+    .barSearchHolder{
+        display: none;
+    }
+}
 
 @include max-1200{
     .logo, .call-opennav-div{
@@ -110,6 +190,9 @@ header{
 }
 
 @include max-992 {
+    .nav-ul > li{
+        margin-inline-end: 17px;
+    }
     .logo, .call-opennav-div{
         width: 17.82%;
     }
@@ -152,10 +235,6 @@ header{
 
 
 @include max-768 {
-    .close-btn-holder{
-        display: flex;
-        justify-content: flex-end;
-    }
     .logo img{
         width: 105px;
         max-width: none;
@@ -189,16 +268,20 @@ header{
         margin-bottom: 0;
     }
     nav{
+        overflow-y: auto;
         position: fixed ;
-        overflow: auto;
         top: 0 ;
         inset-inline-start: 0%;
         width: 100%;
-        z-index: 99;
         height: 100%;
-        padding: 23px 20px 0 20px;
         background-color: #fff;
-        transition:  inset-inline-start linear .3s;
+        opacity: 0;
+        visibility: hidden;
+        clip-path: circle(10.9% at 16% 16%);
+        transition: 0.4s;
+        z-index: 200;
+        padding: 23px 20px 0 20px;
+        transition:  all linear .3s;
     }
     .nav-ul{
         flex-direction: column;
@@ -216,13 +299,7 @@ header{
             font-size: 16px;
         }
     }
-    .closeNav-btn{
-      display: block;
-        i{
-            font-size: 24px;
-            color: #324b9f ;
-        }
-    }
+   
 
 
    

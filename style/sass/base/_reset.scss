@@ -10,6 +10,12 @@
 }
 
 
+.hamburger-lines  .bg-dark{
+    background-color: #324b9f;
+}
+
+
+
 .fixed{
     position: fixed ;
     width: 100%;
@@ -75,4 +81,14 @@
       .callUs-btn:hover{
         color: #fff;
     }
+}
+
+@include max-768{
+    html[dir="ltr"] nav {
+      clip-path: circle(11.2% at 86% 14%);
+    }
+    html[dir="ltr"] .reset-left {
+      clip-path: circle(122% at 86% 14%);
+    }
+
 }

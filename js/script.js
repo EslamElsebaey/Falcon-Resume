@@ -26,7 +26,7 @@ if($("html").attr("dir") == "rtl"){
   By building a professional CV`
 }
 
-const speed = 120; 
+const speed = 80; 
 let i = 0;
 
 function typeWriter() {
@@ -87,14 +87,14 @@ const successStory = new Swiper('.success-story .swiper', {
 
 // open and close sideBar
 
-$(".openNav-btn").click(function(){
-  $("nav").removeClass("open-nav");
-  $("body").css("overflow" , "hidden") ;
+$(".menu-bars").click(function(){
+  $(this).toggleClass("open-bars");
+  $("nav").toggleClass("reset-left");
+  $(".hamburger-lines .line").toggleClass("bg-dark")
+  $("body").toggleClass("overflowHidden");
 })
-$(".closeNav-btn").click(function(){
-  $("nav").addClass("open-nav");
-  $("body").css("overflow" , "visible") ;
-})
+
+
 
 
 
@@ -122,7 +122,7 @@ $(".toTop").click(function(){
 
 //fixed nav
 
-    //~~~~~~~~~ fixed header
+
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 150) {
         $("header").addClass("fixed");
@@ -134,16 +134,9 @@ $(".toTop").click(function(){
         if($(window).width() > 768){
           $(".logo img").removeClass("scroll-img")
         }
-      
       }
     });
-    var fixedBar = document.querySelector("header"),
-      prevScrollposition = $(window).scrollTop();
-
-    (window.onscroll = function () {
-      var o = $(window).scrollTop();
-      prevScrollposition < o && prevScrollposition > 0 ? fixedBar.classList.add("fixsedt") : fixedBar.classList.remove("fixsedt"), (prevScrollposition = o);
-    })   
+  
   
 
 
