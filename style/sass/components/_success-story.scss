@@ -224,6 +224,17 @@ justify-content: center;
          height: 45px; 
          width: 228px;
     }
+    .packages-ques-btns .contact-us-btn{
+        margin-inline-start: 0;
+    }
+    .packages-ques-btns .common-ques-btn{
+        margin-bottom: 20px;
+    }
+    .packages-ques-btns{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .succes-item .review-box i{
         top: 0;
     }

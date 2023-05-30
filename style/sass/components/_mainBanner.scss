@@ -144,11 +144,22 @@
 
 
 @include max-768 {
+  .banner-desc .banner-buttons{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .mainBanner{
     background-position: 14%;
   }
+  .banner-desc .banner-buttons .whatsapp-btn{
+    margin-inline-start: 0;
+  }
+  .banner-desc .banner-buttons .buy-btn{
+    margin-bottom: 20px;
+  }
    .banner-desc .banner-buttons a{
-    width: 150px;
+    width: 228px;
     height: 45px;
     font-size: 16px;
   }

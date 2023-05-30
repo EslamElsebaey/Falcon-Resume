@@ -679,11 +679,23 @@ html[dir=ltr] .banner-desc h3 {
   }
 }
 @media only screen and (max-width: 767px) {
+  .banner-desc .banner-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .mainBanner {
     background-position: 14%;
   }
+  .banner-desc .banner-buttons .whatsapp-btn {
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+  }
+  .banner-desc .banner-buttons .buy-btn {
+    margin-bottom: 20px;
+  }
   .banner-desc .banner-buttons a {
-    width: 150px;
+    width: 228px;
     height: 45px;
     font-size: 16px;
   }
@@ -1087,6 +1099,18 @@ html[dir=ltr] .succes-item .review-box i {
     font-size: 16px;
     height: 45px;
     width: 228px;
+  }
+  .packages-ques-btns .contact-us-btn {
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+  }
+  .packages-ques-btns .common-ques-btn {
+    margin-bottom: 20px;
+  }
+  .packages-ques-btns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .succes-item .review-box i {
     top: 0;
