@@ -26,7 +26,7 @@ if($("html").attr("dir") == "rtl"){
   By building a professional CV`
 }
 
-const speed = 65; 
+const speed = 60; 
 let i = 0;
 
 function typeWriter() {
