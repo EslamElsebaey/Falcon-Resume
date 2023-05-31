@@ -18,7 +18,6 @@ $(document).ready(function(){
 // Typing Effect
 
 let typingText = document.getElementById("typingText").dataset.text;
-console.log(typingText)
 
 
 const speed = 60; 
