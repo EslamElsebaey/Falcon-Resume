@@ -17,14 +17,9 @@ $(document).ready(function(){
 
 // Typing Effect
 
-let typingText ;
-if($("html").attr("dir") == "rtl"){
- typingText = `نساعدك في الحصول على مقابلة عمل أسرع ثلاث مرات
-من خلال بناء سيرة ذاتية إحترافية`; 
-}else{
-   typingText = `We help you get a job interview three times faster
-  By building a professional CV`
-}
+let typingText = document.getElementById("typingText").dataset.text;
+console.log(typingText)
+
 
 const speed = 60; 
 let i = 0;
