@@ -203,7 +203,6 @@ img {
   bottom: 20px;
   right: 20px;
   z-index: 50;
-  opacity: 0;
 }
 
 @keyframes pulse {
@@ -240,15 +239,6 @@ img {
     margin-bottom: 30px;
   }
 }
-.eslam {
-  margin: 50px 0;
-}
-.eslam .eslam-cont {
-  width: 350px;
-  height: 70vh;
-  background-color: #F0EBE7;
-}
-
 .menu-bars {
   position: relative;
   z-index: 300;
