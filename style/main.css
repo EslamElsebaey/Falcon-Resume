@@ -96,6 +96,7 @@ img {
 }
 .ancor-btn:focus {
   text-decoration: none;
+  outline: none;
 }
 
 ::-webkit-scrollbar {
