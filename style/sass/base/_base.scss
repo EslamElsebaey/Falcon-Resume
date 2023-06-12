@@ -57,6 +57,7 @@ img {
   cursor: pointer;
   &:focus{
     text-decoration: none;
+    outline: none;
   }
 }
 
